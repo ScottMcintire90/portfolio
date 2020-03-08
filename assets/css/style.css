@@ -26,9 +26,9 @@ header,
   margin: 50px 0;
 }
 
-.section {
+/* .section {
 	height: 100vh;
-}
+} */
 
 .section-title {
 	text-align: center; 
@@ -99,13 +99,22 @@ table, td {
 	border-top: 0px !important;
 }
 
+.blurb {
+  opacity: 0;
+}
+
 .skills i {
-  font-size: 4rem;
+  font-size: 3rem;
   background: #4f9cca;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid rgb(230, 230, 230);
   box-shadow: 0px 0px 5px 5px #c2d0d6;
+}
+
+.skills i:hover {
+  background: #76c7f7;
+  border: 2px solid white;
 }
 
 .skill-title {
@@ -118,6 +127,13 @@ table, td {
   margin: 0 .1rem;
 }
 
+.headshot {
+  width: 15rem;
+}
+
+.headshot-blurb {
+  font-size:1rem;
+}
 /* End about */
 
 /* Start projects */
