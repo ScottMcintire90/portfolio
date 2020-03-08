@@ -8,6 +8,7 @@ Sap Green : #4F772D
 */
 
 /* Start global */
+html, body { font-size: 16px; }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -99,15 +100,22 @@ table, td {
 }
 
 .skills i {
-  font-size: 4em;
+  font-size: 4rem;
   background: #4f9cca;
-  padding: 30px;
+  padding: 3rem;
   border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 5px 5px #c2d0d6;
 }
 
 .skill-title {
-  font-size:1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
+  margin: .5em;
+}
+
+.exp-circles i {
+  margin: 0 .1rem;
 }
 
 /* End about */
@@ -143,3 +151,12 @@ table, td {
   }
 }
 /* End animation */
+
+
+/* Start media queries */
+
+@media screen and (max-width:991px) {
+  html, body {
+    font-size: 12px;
+  }
+}
