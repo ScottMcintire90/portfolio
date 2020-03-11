@@ -43,6 +43,22 @@ header,
 /* End reusable */
 
 /* Start header */
+.svgHero {
+  height: 100vh;
+  width: 100vw;
+}
+
+#mySvg {
+  background-color: #5b6d77fa;
+  stroke: rgb(139, 139, 139) !important;
+  stroke-width: 1px !important;
+}
+
+#mySvg path {
+  fill: rgb(139, 139, 139) !important;
+}
+
+
 .hero {
 	background: url("../images/hero.png")no-repeat center center;
 	background-size: cover;
