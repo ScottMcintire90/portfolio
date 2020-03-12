@@ -11,7 +11,7 @@ Sap Green : #4F772D
 html, body { font-size: 16px; }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   overflow-x: hidden;
 }
 
@@ -38,10 +38,6 @@ header,
 
 /* End global */
 
-/* Start reusable */
-
-/* End reusable */
-
 /* Start header */
 .svgHero {
   height: 100vh;
@@ -49,24 +45,17 @@ header,
 }
 
 #mySvg {
-  background-color: #5b6d77fa;
-  stroke: rgb(139, 139, 139) !important;
+  background-color: #4e6977fa;
+  stroke: rgb(56, 56, 56) !important;
   stroke-width: 1px !important;
 }
 
 #mySvg path {
-  fill: rgb(139, 139, 139) !important;
-}
-
-
-.hero {
-	background: url("../images/hero.png")no-repeat center center;
-	background-size: cover;
-	position: relative;
+  fill: rgb(56, 56, 56) !important;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #4e6977fa;
   top: 0;
   left: 0;
   width: 100%;
@@ -85,27 +74,37 @@ header,
 	z-index:2;
 }
 
-.hero-name {
-	font-size: 5em;
-	font-weight: 700;
-  text-shadow: 2px 2px 0px #4f9cca;
+#welcome {
+	font-size: 3em;
+  font-weight: 700;
+  text-shadow: 2px 2px 0px rgb(56, 56, 56);
+  text-transform: uppercase;
+  opacity: 0.85;
+
 }
 
 .hero-title {
-	font-size: 3em;
-	font-weight: 700;
-	text-shadow: 2px 2px 0px #4f9cca;
-	margin-bottom: 50px;
+	font-size: 1.5em;
+	font-weight: 400;
+	text-shadow: 2px 2px 0px rgb(56, 56, 56);
+  margin-bottom: 50px;
+  opacity: 0.85;
 }
 
 .arrow a {
 	color: #fff;
-	text-shadow: 0px 5px 2px #4f9cca
+  text-shadow: 0px 5px 2px rgb(56, 56, 56);
+  opacity: 0.85;
 }
 
 .arrow a:hover {
 	text-decoration: none;
 }
+
+#mySvg path:hover {
+  fill: #28c0e6 !important;
+}
+
 
 /* End header */
 
@@ -121,7 +120,7 @@ table, td {
 
 .skills i {
   font-size: 3rem;
-  background: #4f9cca;
+  background: #5bb4e7;
   padding: 2rem;
   border-radius: 50%;
   border: 2px solid rgb(230, 230, 230);

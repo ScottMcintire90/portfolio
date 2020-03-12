@@ -28,8 +28,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 -->
-<?xml-stylesheet type="text/css" href="../css/style.css"?>
-<!-- <script type="text/javascript" href="../../js/main.js" /> -->
+<?xml-stylesheet type="text/css" href="assets/css/style.css"?>
 
 <svg
    xmlns="http://www.w3.org/2000/svg"
@@ -48,24 +47,10 @@ THE SOFTWARE.
    width="500px"
    id="mySvg"
    inkscape:version="0.48.4 r9939">
-
+   <script type="text/javascript" xlink:href="js/world.js" />
    <script type="text/javascript"><![CDATA[
 
-
-      let svg = document.getElementById("mySvg")
-      let animate = document.createElementNS("http://www.w3.org/2000/svg","animate");
-      animate.setAttribute("repeatCount", "indefinite");
-      animate.setAttribute("dur", "60s")
-
-      <!-- Good for 1300 px and above -->
-      animate.setAttribute("values", "0 180 1200 600; 800 180 1200 600; 0 180 1200 600;")
-
-      <!-- Good for  px and above -->
-      <!-- animate.setAttribute("values", "0 180 1200 600; 800 180 1200 600; 0 180 1200 600;") -->
-
-      animate.setAttribute("attributeName", "viewBox")
-      svg.appendChild(animate)
-      animate.beginElement()
+     
 
 
   ]]></script>

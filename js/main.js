@@ -23,12 +23,10 @@ $(document).ready(function(){
     // Add full circles
     for(let i=0; i<full; i++) {
       $(`${selector} .exp-circles`).append('<i class="fa fa-circle" style="color:#4f9cca;"></i>')
-      console.log(`${selector} .exp-circles`)
     }
     // Add empty circles
     for(let i=0; i<empty; i++) {
       $(`${selector} .exp-circles`).append('<i class="fa fa-circle" style="color:#c2d0d6;"></i>')
-      console.log(`${selector} .exp-circles`)
     }
   }
   addExpCircles(9, 1, "#html5");
@@ -38,4 +36,5 @@ $(document).ready(function(){
   addExpCircles(7, 3, "#vuejs");
   addExpCircles(6, 4, "#nodejs");
   addExpCircles(5, 5, "#rubyRails");
+
 });
