@@ -32,8 +32,8 @@ header,
 
 .section-title {
 	text-align: center; 
-	margin-top: 1em;
-	font-size: 3em;
+	margin-top: 1rem;
+	font-size: 3rem;
 }
 
 /* End global */
@@ -45,13 +45,13 @@ header,
 }
 
 #mySvg {
-  background-color: #4e6977fa;
-  stroke: rgb(56, 56, 56) !important;
+  background-color: #545b73;
+  stroke: #333333!important;
   stroke-width: 1px !important;
 }
 
 #mySvg path {
-  fill: rgb(56, 56, 56) !important;
+  fill: rgb(56, 56, 56);
 }
 
 .overlay {
@@ -75,7 +75,7 @@ header,
 }
 
 #welcome {
-	font-size: 3em;
+	font-size: 4rem;
   font-weight: 700;
   text-shadow: 2px 2px 0px rgb(56, 56, 56);
   text-transform: uppercase;
@@ -84,7 +84,7 @@ header,
 }
 
 .hero-title {
-	font-size: 1.5em;
+	font-size: 2rem;
 	font-weight: 400;
 	text-shadow: 2px 2px 0px rgb(56, 56, 56);
   margin-bottom: 50px;
@@ -102,9 +102,26 @@ header,
 }
 
 #mySvg path:hover {
-  fill: #28c0e6 !important;
+  fill: #4f9cca !important;
 }
 
+.black {
+  fill: #4f9cca !important;
+  stroke: #4f9cca !important;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition:all 1s;
+}
+
+.normal-background {
+  fill: #333333 !important;
+  stroke: #333333 !important;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition:all 1s;
+}
 
 /* End header */
 
