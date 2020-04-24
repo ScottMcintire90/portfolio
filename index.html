@@ -10,7 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
   </head>
   <body>
     <header>
@@ -18,7 +18,7 @@
       <object data="world.svg" type="image/svg+xml" class="svgHero"></object>
         <div class="container">
           <div class="hero-text text-center">
-            <div id="welcome">Welcome</div>
+            <div id="welcome"></div>
             <div class="hero-title">I'm Scott McIntire, a web developer.</div>
             <div class="arrow bounce">
               <a class="fa fa-chevron-down fa-2x scrollLink" href="#about"></a>
@@ -27,32 +27,15 @@
         </div>
       </div>
     </div>
+    <div class="ui four item menu fixed">
+      <a class="item scrollLink" href="#about">About</a>
+      <a class="item scrollLink" href="#skills">Skills</a>
+      <a class="item scrollLink" href="#projects">Projects</a>
+      <a class="item scrollLink" href="#contact">Contact</a>
+    </div>
     </header>
-      <div class="section" id="about">
+    <div class="section" id="about">
         <div class="section-title">about</div>
-        <div class="container">
-          <div class="row text-center skills">
-            <div class="col-sm-3" id="development" data-aos="flip-right" data-aos-duration="1000" data-aos-once="true">
-              <i class="fa fa-code"></i>
-              <div class="skill-title">Development</div>
-              <div class="blurb">Years of experience developing using modern frameworks</div>
-            </div>
-            <div class="col-sm-3" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
-              <i class="fa fa-arrows"></i>
-              <div class="skill-title">Design</div>
-              <div class="blurb">Eye for attractive design, UX and awesome animation</div>
-            </div>
-            <div class="col-sm-3" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
-              <i class="fa fa-truck"></i>
-              <div class="skill-title">Automation</div>
-              <div class="blurb">Passion for highly tested code with a focus on automation</div>
-            </div>
-            <div class="col-sm-3" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
-              <i class="fa fa-cogs"></i>
-              <div class="skill-title">Tools</div>
-              <div class="blurb">Skilled using a wide variety of tools and eager to learn more</div>
-            </div>
-          </div>
           <div class="row about-2">
             <div class="col-sm-6 text-center" data-aos="slide-right" data-aos-duration="500" data-aos-once="true">
               <img src="assets/images/headshot.png" class="headshot"/>
@@ -103,17 +86,50 @@
         </div>
 
       </div>
-      <div class="section">
-        <div class="section-title">projects</div>
+      <div class="section" id="skills">
+        <div class="section-title">skills</div>
+        <div class="container">
+          <div class="row text-center skills">
+            <div class="col-sm-3" id="development" data-aos="flip-right" data-aos-duration="1000" data-aos-once="true">
+              <i class="fa fa-code"></i>
+              <div class="skill-title">Development</div>
+              <div class="blurb">Years of experience developing using modern frameworks</div>
+            </div>
+            <div class="col-sm-3" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
+              <i class="fa fa-arrows"></i>
+              <div class="skill-title">Design</div>
+              <div class="blurb">Eye for attractive design, UX and awesome animation</div>
+            </div>
+            <div class="col-sm-3" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
+              <i class="fa fa-truck"></i>
+              <div class="skill-title">Automation</div>
+              <div class="blurb">Passion for highly tested code with a focus on automation</div>
+            </div>
+            <div class="col-sm-3" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+              <i class="fa fa-cogs"></i>
+              <div class="skill-title">Tools</div>
+              <div class="blurb">Skilled using a wide variety of tools and eager to learn more</div>
+            </div>
+          </div>
       </div>
-      <div class="section">
+      <div class="section" id="projects">
+        <div class="section-title">projects</div>
+        <div class="ui three item menu">
+          <a class="item">Web</a>
+          <a class="item ">Apps</a>
+          <a class="item ">Misc</a>
+        </div>
+      </div>
+      <div class="section" id="contact">
         <div class="section-title">contact</div>
       </div>
     
     <footer>
-
+      <p>© 2020 Scott McIntire</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
     <script>

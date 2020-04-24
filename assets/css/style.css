@@ -11,8 +11,9 @@ Sap Green : #4F772D
 html, body { font-size: 16px; }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web', sans-serif !important;
   overflow-x: hidden;
+  line-height: 1.5 !important;
 }
 
 html,
@@ -26,6 +27,10 @@ header,
   margin: 50px 0;
 }
 
+.active {
+  background: black;
+}
+
 /* .section {
 	height: 100vh;
 } */
@@ -33,7 +38,9 @@ header,
 .section-title {
 	text-align: center; 
 	margin-top: 1rem;
-	font-size: 3rem;
+  font-size: 3rem;
+  padding-top: 50px;
+  text-transform: uppercase;
 }
 
 /* End global */
@@ -45,13 +52,42 @@ header,
 }
 
 #mySvg {
-  background-color: #545b73;
-  stroke: #333333!important;
+  stroke: rgba(0,0,0,0.2) !important;
   stroke-width: 1px !important;
 }
 
+.overlay {
+  background: linear-gradient(180deg, rgba(21,90,189,1) 5%, rgba(0,122,157,1) 50%, rgba(26,167,231,1) 95%);
+  background-size: 400% 400%;
+  -webkit-animation: wave 25s ease infinite;
+  -moz-animation: wave 25s ease infinite;
+  animation: wave 25s ease infinite;
+}
+
+@-webkit-keyframes wave {
+  0%{background-position:50% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:50% 0%}
+}
+@-moz-keyframes wave {
+  0%{background-position:50% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:50% 0%}
+}
+@keyframes wave {
+  0%{background-position:50% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:50% 0%}
+}
+
 #mySvg path {
-  fill: rgb(56, 56, 56);
+  fill: url(#countryGradient) !important;
+}
+
+#mySvg path:hover {
+  /* fill: transparent !important; */
+  transform: translate3d(5px, 5px, 0px);
+
 }
 
 .overlay {
@@ -101,10 +137,6 @@ header,
 	text-decoration: none;
 }
 
-#mySvg path:hover {
-  fill: #4f9cca !important;
-}
-
 .black {
   fill: #4f9cca !important;
   stroke: #4f9cca !important;
@@ -126,6 +158,7 @@ header,
 /* End header */
 
 /* Start about */
+
 
 table, td {
 	border-top: 0px !important;
@@ -168,15 +201,29 @@ table, td {
 }
 /* End about */
 
-/* Start projects */
+/* Start skills */
+#skills {
+  height: 600px;
+}
+/* End skills */
 
+/* Start projects */
+#projects {
+  height: 600px;
+}
 /* End projects */
 
 /* Start contact */
-
+#contact {
+  height: 600px;
+}
 /* End contact */
 
 /* Start footer */
+
+footer p {
+  text-align: center;
+}
 
 /* End footer */
 
