@@ -39,10 +39,34 @@ header,
 	text-align: center; 
 	margin-top: 1rem;
   font-size: 3rem;
-  padding-top: 50px;
+  padding: 50px 0px;
   text-transform: uppercase;
 }
 
+#mainMenu {
+  position: absolute;
+  height: 50px;
+  margin-top: 0px;
+  text-align: left;
+  width: 100%;
+  z-index: 99;
+  /* display: none; */
+}
+
+#mainMenu.fixed {
+  bottom: inherit;
+  left: 0;
+  position: fixed;
+  top: 0;
+}
+#mainMenu.fixed {
+  animation: popDown 0.5s;
+}
+@keyframes popDown {
+  0% {
+    transform: translateY(-100px);
+  }
+}
 /* End global */
 
 /* Start header */
@@ -53,7 +77,7 @@ header,
 
 #mySvg {
   stroke: rgba(0,0,0,0.2) !important;
-  stroke-width: 1px !important;
+  stroke-width: 2px !important;
 }
 
 .overlay {
@@ -64,30 +88,13 @@ header,
   animation: wave 25s ease infinite;
 }
 
-@-webkit-keyframes wave {
-  0%{background-position:50% 0%}
-  50%{background-position:50% 100%}
-  100%{background-position:50% 0%}
-}
-@-moz-keyframes wave {
-  0%{background-position:50% 0%}
-  50%{background-position:50% 100%}
-  100%{background-position:50% 0%}
-}
-@keyframes wave {
-  0%{background-position:50% 0%}
-  50%{background-position:50% 100%}
-  100%{background-position:50% 0%}
-}
-
 #mySvg path {
   fill: url(#countryGradient) !important;
 }
 
 #mySvg path:hover {
-  /* fill: transparent !important; */
-  transform: translate3d(5px, 5px, 0px);
-
+  fill: transparent !important;
+  stroke: transparent !important;
 }
 
 .overlay {
@@ -129,12 +136,13 @@ header,
 
 .arrow a {
 	color: #fff;
-  text-shadow: 0px 5px 2px rgb(56, 56, 56);
-  opacity: 0.85;
+  text-shadow: 0px 3px 1px rgb(56, 56, 56);
+  opacity: 0.65;
 }
 
 .arrow a:hover {
-	text-decoration: none;
+  text-decoration: none;
+  color: #fff !important
 }
 
 .black {
@@ -159,8 +167,19 @@ header,
 
 /* Start about */
 
+#about table {
+  border: 0px !important;
+}
 
-table, td {
+#about .exp-circles i  { 
+  margin-top: 8px;
+}
+
+#about table tr td:nth-child(1) {
+  font-size:1.25rem;
+}
+
+#about table, td {
 	border-top: 0px !important;
 }
 
@@ -189,7 +208,8 @@ table, td {
 }
 
 .exp-circles i {
-  margin: 0 .1rem;
+  font-size: 1.25rem;
+  margin: 0 .6rem;
 }
 
 .headshot {
@@ -197,26 +217,43 @@ table, td {
 }
 
 .headshot-blurb {
-  font-size:1rem;
+  font-size:1.35rem;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
 }
+
+.headshot-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.technologies .columns {
+  text-align: center;
+}
+
+.technologies img {
+  max-width: 60px;
+  max-height: 60px;
+}
+
 /* End about */
 
-/* Start skills */
-#skills {
-  height: 600px;
-}
-/* End skills */
-
 /* Start projects */
+
 #projects {
   height: 600px;
 }
+
+
 /* End projects */
 
 /* Start contact */
+
 #contact {
   height: 600px;
 }
+
 /* End contact */
 
 /* Start footer */
@@ -227,6 +264,7 @@ footer p {
 
 /* End footer */
 
+
 /* Start animations */
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -236,15 +274,32 @@ footer p {
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
+    transform: translateY(2000px);
   }
   40% {
-    transform: translateY(-20px);
+    transform: translateY(-2000px);
   }
   60% {
-    transform: translateY(-10px);
+    transform: translateY(-5000px);
   }
 }
+
+@-webkit-keyframes wave {
+  0%{background-position:50% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:50% 0%}
+}
+@-moz-keyframes wave {
+  0%{background-position:50% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:50% 0%}
+}
+@keyframes wave {
+  0%{background-position:50% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:50% 0%}
+}
+
 /* End animation */
 
 
