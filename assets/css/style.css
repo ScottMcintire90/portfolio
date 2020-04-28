@@ -245,6 +245,24 @@ header,
   height: 600px;
 }
 
+#projects img {
+  margin: 0 auto !important;
+}
+
+#projects .ui.segment {
+  border: none;
+  box-shadow: none;
+}
+
+#projects .ui.segment:hover img {
+  opacity: 0;
+}
+#projects .ui.segment:hover {
+  background-color: #AD310B;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
 
 /* End projects */
 
@@ -274,13 +292,13 @@ footer p {
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-    transform: translateY(2000px);
+    transform: translateY(0);
   }
   40% {
-    transform: translateY(-2000px);
+    transform: translateY(-30px);
   }
   60% {
-    transform: translateY(-5000px);
+    transform: translateY(-15px);
   }
 }
 
