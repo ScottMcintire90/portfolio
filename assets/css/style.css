@@ -31,10 +31,6 @@ header,
   background: black;
 }
 
-/* .section {
-	height: 100vh;
-} */
-
 .section-title {
 	text-align: center; 
 	margin-top: 1rem;
@@ -70,6 +66,40 @@ header,
 /* End global */
 
 /* Start header */
+.hero {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(6, 121, 193, 0.5);
+	background-image:	 
+		url('../images/treeline.png'),
+		url('../images/clouds-bottom.png'),
+		url('../images/mountain.png'),
+		url('../images/clouds-top.png');
+	background-repeat: repeat-x;
+	background-position: 
+		0 120%,
+		-100px 30%,
+		-200px 40%,
+		0 0;
+	background-size: 
+		800px,
+		400px 100px,
+		1000px,
+		400px 260px;
+	animation: 50s float infinite linear;
+	}
+
+@keyframes float {
+	100% {
+		background-position: 
+			-800px 120%,
+			300px 30%,
+			800px 40%,
+			400px 0%;
+		}
+	}
+
+
 .svgHero {
   height: 100vh;
   width: 100vw;
@@ -145,30 +175,31 @@ header,
   color: #fff !important
 }
 
-.black {
-  fill: #4f9cca !important;
-  stroke: #4f9cca !important;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  transition:all 1s;
+#mainMenu {
+  background-color: rgb(28,53,45);
+  border-radius: 0px;
+  border-bottom: 3px solid #80dc80;
 }
 
-.normal-background {
-  fill: #333333 !important;
-  stroke: #333333 !important;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  transition:all 1s;
+#mainMenu .item {
+  font-size:1.25rem;
+  color: white;
 }
 
+#mainMenu .active {
+  color: rgba(83, 255, 83, 0.804);
+}
+
+#mainMenu .container {
+  margin-left: 0px !important;
+}
 /* End header */
 
 /* Start about */
 
 #about table {
   border: 0px !important;
+  background: transparent;
 }
 
 #about .exp-circles i  { 
@@ -189,27 +220,24 @@ header,
 
 .skills i {
   font-size: 3rem;
-  background: #5bb4e7;
+  background: rgb(28,53,45);;
   padding: 2rem;
   border-radius: 50%;
   border: 2px solid rgb(230, 230, 230);
   box-shadow: 0px 0px 5px 5px #c2d0d6;
 }
 
-.skills i:hover {
-  background: #76c7f7;
-  border: 2px solid white;
-}
-
-.skill-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: .5em;
-}
-
 .exp-circles i {
   font-size: 1.25rem;
   margin: 0 .6rem;
+}
+
+.full-circle {
+  color: #008000
+}
+
+.empty-circle{
+  color: rgba(0,0,0,0.2);
 }
 
 .headshot {
