@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Scott McIntire | Front End Developer</title>
+    <title>Scott McIntire | Web Developer</title>
     <script src="https://use.fontawesome.com/58d836c71a.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -20,36 +20,22 @@
               <div class="hero-text text-center">
                 <div id="welcome"></div>
                 <div class="hero-title"><span style="display: block; font-size:3rem">Scott McIntire</span>
-                   web developer</div>
-                <div class="arrow bounce" style="z-index: -10;">
-                  <a class="fa fa-chevron-down fa-2x scrollLink" href="#about"></a>
+                   web developer
                 </div>
+                <a href="#about" class="scrollLink">
+                  <div class="hero-link">See my work<i class="fa fa-chevron-down fa-2x"></i></div>
+                </a>
               </div>
             </div>
       </div>
-      <!-- <div class="overlay">
-        <object data="world.svg" type="image/svg+xml" class="svgHero"></object>
-          <div class="container">
-            <div class="hero-text text-center">
-              <div id="welcome"></div>
-              <div class="hero-title">I'm Scott McIntire, a web developer.</div>
-              <div class="arrow bounce">
-                <a class="fa fa-chevron-down fa-2x scrollLink" href="#about"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </header>
 
     <div class="ui menu" id="mainMenu">
-      <div class="ui container">
-          <a class="item scrollLink" href="#home">Home</a>
-        <a class="item scrollLink" href="#about">About</a>
-        <a class="item scrollLink" href="#skills">Skills</a>
-        <a class="item scrollLink" href="#projects">Projects</a>
-        <a class="item scrollLink" href="#contact">Contact</a>
-      </div>
+      <a class="item scrollLink" href="#home">Home</a>
+      <a class="item scrollLink" href="#about">About</a>
+      <a class="item scrollLink" href="#skills">Skills</a>
+      <a class="item scrollLink" href="#projects">Projects</a>
+      <a class="item scrollLink" href="#contact">Contact</a>
     </div>
 
     <div id="about">
@@ -57,51 +43,25 @@
       <div class="ui align centered grid">
         <div class="eight wide column align centered">
           <div class="text-center" data-aos="slide-right" data-aos-duration="500" data-aos-once="true">
-            <img src="assets/images/headshot.png" class="headshot"/>
+            <img src="assets/images/avatar.png" class="headshot"/>
+          </div>
+        </div>
+        <div class="eight wide column align centered">
+          <div class="text-center" data-aos="slide-right" data-aos-duration="500" data-aos-once="true">
             <div class="headshot-title">Who Am I?</div>
             <div class="headshot-blurb" >I'm a web developer in Portland, OR. I am passionate about building React apps with intuitive design and UX.</div>
           </div>
         </div>
-        <div class="eight wide column align centered">
-          <div class="text-center">
-            <table class="ui single line table">
-              <tbody>
-                <tr id="html5">
-                  <td data-label="Tech">HTML5</td>
-                  <td class="exp-circles" data-label="Experience"></td>
-                </tr>
-                <tr id="cssSass">
-                  <td data-label="Tech">CSS/Sass</td>
-                  <td class="exp-circles" data-label="Experience"></td>
-                </tr>
-                <tr id="javascript">
-                  <td data-label="Tech">Javascript</td>
-                  <td class="exp-circles" data-label="Experience"></td>
-                </tr>
-                <tr id="react">
-                  <td data-label="Tech">React/Redux</td>
-                  <td class="exp-circles" data-label="Experience"></td>
-                </tr>
-                <tr id="vuejs">
-                  <td data-label="Tech">TypeScript</td>
-                  <td class="exp-circles" data-label="Experience"></td>
-                </tr>
-                <tr id="nodejs">
-                  <td data-label="Tech">Node</td>
-                  <td class="exp-circles" data-label="Experience"></td>
-                </tr>
-                <tr id="rubyRails">
-                  <td data-label="Tech">Rails</td>
-                  <td class="exp-circles" data-label="Experience"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
       </div>
     </div>
-    <div class="section" id="skills">
+    <div id="skills">
         <div class="section-title">skills</div>
+        <div class="ui four column center aligned grid container">
+          <div class="column">UI</div>
+          <div class="column">UX</div>
+          <div class="column">QA</div>
+          <div class="column">ETC</div>
+        </div>
         <div class="ui twelve column center aligned grid technologies">
           <div class="column"><img src="assets/images/html5.png" alt="html5 logo"/></div>
           <div class="column"><img src="assets/images/css3.png" alt="css3 logo"/></div>
@@ -115,49 +75,46 @@
           <div class="column"><img src="assets/images/rails.png" alt="rails logo"/></div>
         </div>
     </div>
-    <div class="section" id="projects">
+    <div id="projects">
       <div class="section-title">projects</div>
-      <div class="ui two column grid centered container">
-        <div class="column">
-          <div class="ui segment">
-            <img class="ui large image" src="assets/images/acceptto.png">
-          </div>
-        </div>
-        <div class="column">
-          <div class="ui segment">
-            <img>
-          </div>
-        </div>
-        <div class="column">
-          <div class="ui segment">
-            <img>
-          </div>
-        </div>
-        <div class="column">
-          <div class="ui segment">
-            <img>
-          </div>
-        </div>
+      <div class="ui borderless menu">
+          <a class="item" href="#codeProjects">Code Projects</a>
+          <a class="item" href="#professional">Professional</a>
+      </div>
+      <div class="ui three column grid centered container">
+        <div class="column project professional" style="background-image:url(assets/images/corporate-1.png);"></div>
+        <div class="column project professional" style="background-image:url(assets/images/corporate-docs.png);"></div>
+        <div class="column project professional" style="background-image:url(assets/images/orcas-island.png);"></div>
+        <div class="column project professional" style="background-image:url(assets/images/corporate-2.png);"></div>
       </div>
     </div>
     
 
-    <div class="section" id="contact">
+    <div id="contact">
       <div class="section-title">contact</div>
-      <div class="about-msg">Let's get in touch</div>
-      <a href="mailto:scottmcintire90@gmail.com">Send me an email</a>
-    </div>
-    
-    <footer>
-      <div class="ui four column grid centered container">
-        <div>LinkedIn</div>
-        <div>GitHub</div>
-        <div>Resume</div>
-        <div>Email</div>
-      </div>
-      <p style="margin: 20px">SCOTT MCINTIRE © 2020 </p>
-    </footer>
 
+      <div class="ui form">
+        <div class="required field">
+          <input type="text" placeholder="Name">
+        </div>
+        <div class="required field">
+            <input type="text" placeholder="Email Address">
+        </div>
+        <div class="required field">
+          <textarea placeholder="Message"></textarea>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="ui four column center aligned grid container">
+        <div class="column"><i class="fa fa-linkedin"></i></div>
+        <div class="column">GitHub</div>
+        <div class="column">Resume</div>
+        <div class="column">Email</div>
+      </div>
+      <div class="copyright">SCOTT MCINTIRE © 2020</div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
